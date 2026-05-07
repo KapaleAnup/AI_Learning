@@ -1,21 +1,37 @@
 # AI_Learning
 
-This repository is currently an empty starter workspace for AI and learning-related experiments, notes, or projects.
+This repository now includes a starter Playwright E2E framework scaffold based on the `playwright-e2e` QA skill.
 
-## Current Status
+## What Is Included
 
-- No application code has been added yet.
-- No build system, package manager, or framework has been chosen yet.
-- The repository is ready for the first project scaffold.
+- TypeScript Playwright config
+- Page Object Model base classes
+- Reusable auth fixtures
+- Example auth and dashboard specs
+- Basic project scripts and ignore rules
 
-## Suggested Next Steps
+## Project Layout
 
-1. Choose the first stack or project type.
-2. Add the initial folder structure.
-3. Commit the first working example.
+```text
+tests/
+  e2e/
+    auth/login.spec.ts
+    dashboard/dashboard.spec.ts
+  fixtures/auth.fixture.ts
+  pages/base.page.ts
+  pages/login.page.ts
+  pages/dashboard.page.ts
+  utils/test-data.ts
+playwright.config.ts
+```
 
-## Notes for Contributors
+## Getting Started
 
-- Keep changes small and intentional.
-- Add documentation alongside code.
-- Update this README as the project grows.
+1. Install dependencies with `npm install`.
+2. Run the test suite with `npm test`.
+3. Open the report with `npm run report`.
+
+## Notes
+
+- The scaffold is intentionally small and can be connected to a real app by setting `BASE_URL`.
+- `playwright.config.ts` targets Chromium, Firefox, and WebKit.
