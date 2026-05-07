@@ -8,6 +8,7 @@ This repository now includes a starter Playwright E2E framework scaffold based o
 - Page Object Model base classes
 - Reusable auth fixtures
 - Example auth and dashboard specs
+- Automation Exercise registration flow
 - Basic project scripts and ignore rules
 
 ## Project Layout
@@ -30,6 +31,8 @@ playwright.config.ts
 1. Install dependencies with `npm install`.
 2. Run the test suite with `npm test`.
 3. Open the report with `npm run report`.
+
+The default `baseURL` is `https://automationexercise.com`, and the registration test lives at [`tests/e2e/auth/register.spec.ts`](C:/Users/Anup%20Kapale/Documents/learAi/codexcode/AI_Learning/tests/e2e/auth/register.spec.ts).
 
 ## Notes
 
